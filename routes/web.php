@@ -35,16 +35,16 @@ Route::group(['prefix' => 'category'], function (){
         ->name('category.news.builder');
     Route::get('/sport/news/{id}', 'CategoryNewsController@openNews')
         ->where('id', '\d+')
-        ->name('category.news.sport');
+        ->name('category.news.sport.open');
     Route::get('/medic/news/{id}', 'CategoryNewsController@openNews')
         ->where('id', '\d+')
-        ->name('category.news.medic');
+        ->name('category.news.medic.open');
     Route::get('/lifehacks/news/{id}', 'CategoryNewsController@openNews')
         ->where('id', '\d+')
-        ->name('category.news.lifehacks');
+        ->name('category.news.lifehacks.open');
     Route::get('/builder/news/{id}', 'CategoryNewsController@openNews')
         ->where('id', '\d+')
-        ->name('category.news.builder');
+        ->name('category.news.builder.open');
 });
 
 //for admin
