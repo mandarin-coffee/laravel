@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-p, div, span {
+p, div, span, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     color: #2A324B;
 }
 
@@ -23,7 +23,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h2, h3, h4, h5{
+
+h2, h3, h4, h5 {
     font-family: 'Lobster', cursive;
 }
 
@@ -56,6 +57,19 @@ header {
         justify-items: center;
         align-items: center;
 
+        h1 {
+            a {
+                font-family: 'Lemonada', cursive;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 80px;
+                color: #C7CCDB;
+            }
+            a:hover {
+                text-decoration: none;
+                color: #F7C59F;
+            }
+        }
         .searchAndSign {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -78,40 +92,96 @@ header {
     }
 }
 
-main{
+main {
     width: 80%;
     height: 100%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    a{
-        color: #767B91!important;
+    a {
+        color: #767B91 !important;
     }
+
+    .content {
+        .auth {
+            form {
+                display: grid;
+
+                input {
+                    width: 360px;
+                    height: 24px;
+                    margin: 10px 0;
+                    border-radius: 4px;
+                    border: 1px solid #767B91;
+                }
+
+                input:focus {
+                    border: 1px solid #2A324B;
+                    outline: none;
+                }
+
+                button {
+                    width: 360px;
+                    height: 24px;
+                    background: #C7CCDB;
+                    border-radius: 4px;
+                    border: 1px solid #2A324B;
+                    color: #7F6652;
+                    box-shadow: 0px 2px 1px #2A324B;
+                    font-weight: 400;
+                }
+
+                button:hover {
+                    cursor: pointer;
+                }
+
+                button:active {
+                    box-shadow: none;
+                }
+
+                button:focus {
+                    outline: none;
+                }
+            }
+
+            .authLinks {
+                margin-top: 10px;
+                width: 360px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
 }
 
 //Components
 
-.topMenu{
+.topMenu {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    a{
-        color: #767B91!important;
+
+    a {
+        color: #767B91 !important;
     }
 }
-footer{
+
+footer {
     width: 100%;
     background: #2A324B;
     position: fixed;
     left: 0;
     bottom: 0;
 }
-.aside{
+
+.aside {
     justify-self: center;
-    nav{
-        ul{
+
+    nav {
+        ul {
             list-style-type: none;
         }
     }

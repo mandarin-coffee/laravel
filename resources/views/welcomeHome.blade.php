@@ -1,9 +1,10 @@
 @extends('layouts.index')
 
 @section('content')
-<a href="<?=route('admin.news')?>">Список новостей</a><br>
-<a href="<?=route('category.news')?>">Посмотреть категории новостей</a><br>
-<a href="<?=route('add.news')?>">Перейти на страницу добавления новости</a>
+    <h3>Сайт новостей - Site</h3>
+<a href="{{route('admin.news')}}">Список новостей</a><br>
+<a href="{{route('category.news')}}">Посмотреть категории новостей</a><br>
+<a href="{{route('add.news')}}>">Перейти на страницу добавления новости</a>
 @stop
 
 {{--@section('content')--}}

@@ -17,9 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/news/{id}.html', 'NewsController@show')
     ->where('id', '\d+')
     ->name('news.show');
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index')
+    ->name('home');
 Route::get('/added', 'addNewsController@addNews')
     ->name('add.news');
+
+//auth
+
+Route::get('/login', 'SignUpController@auth')
+    ->name('login');
+Route::get('/register', 'SignUpController@register')
+    ->name('register');
+Route::get('/forgotPass', 'SignUpController@forgotPass')
+    ->name('forgotPass');
 
 //for category
 Route::group(['prefix' => 'category'], function (){

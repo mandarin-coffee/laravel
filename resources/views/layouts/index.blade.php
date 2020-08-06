@@ -26,10 +26,10 @@
 <header>
     <div class="wrap">
         <a href="#">Subscribe</a>
-        <h1>Site</h1>
+        <h1><a href="{{route('home')}}">Site</a></h1>
         <div class="searchAndSign">
             <div class="search"><a href="#"><i class="fas fa-search"></i></a></div>
-            <div class="login"><a href="#">Sign Up</a></div>
+            <div class="login"><a href="{{route('login')}}">Sign Up</a></div>
         </div>
     </div>
 </header>
