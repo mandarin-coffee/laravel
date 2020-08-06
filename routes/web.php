@@ -33,18 +33,18 @@ Route::group(['prefix' => 'category'], function (){
         ->name('category.news.lifehacks');
     Route::get('/builder', 'CategoryNewsController@builder')
         ->name('category.news.builder');
-    Route::get('/sport/news/{id}', 'CategoryNewsController@openNews')
-        ->where('id', '\d+')
-        ->name('category.news.sport');
-    Route::get('/medic/news/{id}', 'CategoryNewsController@openNews')
-        ->where('id', '\d+')
-        ->name('category.news.medic');
-    Route::get('/lifehacks/news/{id}', 'CategoryNewsController@openNews')
-        ->where('id', '\d+')
-        ->name('category.news.lifehacks');
-    Route::get('/builder/news/{id}', 'CategoryNewsController@openNews')
-        ->where('id', '\d+')
-        ->name('category.news.builder');
+//    Route::get('/sport/news/{id}', 'CategoryNewsController@openNews')
+//        ->where('id', '\d+')
+//        ->name('category.news.sport');
+//    Route::get('/medic/news/{id}', 'CategoryNewsController@openNews')
+//        ->where('id', '\d+')
+//        ->name('category.news.medic');
+//    Route::get('/lifehacks/news/{id}', 'CategoryNewsController@openNews')
+//        ->where('id', '\d+')
+//        ->name('category.news.lifehacks');
+//    Route::get('/builder/news/{id}', 'CategoryNewsController@openNews')
+//        ->where('id', '\d+')
+//        ->name('category.news.builder');
 });
 
 //for admin
