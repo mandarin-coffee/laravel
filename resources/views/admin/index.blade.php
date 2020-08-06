@@ -1,3 +1,5 @@
-<h1>Привет, админ</h1>
-<br>
+@extends('layouts.index')
+
+@section('content')
 <a href="<?=route('admin.news')?>">Список новостей</a>
+@stop
