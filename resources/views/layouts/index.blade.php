@@ -40,7 +40,13 @@
     <div class="content">
         @yield('content')
     </div>
-    <div class="aside"></div>
+    <div class="aside">
+        <x-aside></x-aside>
+    </div>
 </main>
+
+<footer>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad adipisci aliquid consectetur delectus exercitationem expedita illum inventore iure non officia optio quibusdam repudiandae, sed!
+</footer>
 </body>
 </html>

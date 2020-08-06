@@ -80,6 +80,7 @@ header {
 
 main{
     width: 80%;
+    height: 100%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -98,5 +99,20 @@ main{
     justify-content: space-around;
     a{
         color: #767B91!important;
+    }
+}
+footer{
+    width: 100%;
+    background: #2A324B;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.aside{
+    justify-self: center;
+    nav{
+        ul{
+            list-style-type: none;
+        }
     }
 }
