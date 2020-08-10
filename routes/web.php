@@ -21,6 +21,8 @@ Route::get('/', 'WelcomeController@index')
     ->name('home');
 Route::get('/added', 'addNewsController@addNews')
     ->name('add.news');
+Route::get('/callback', 'callBackController@callBack')
+    ->name('callback');
 
 //auth
 
